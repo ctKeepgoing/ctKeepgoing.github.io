@@ -1,3 +1,5 @@
+<h1>UCSD CAPSTONE PROJECT</h1>
+
 # Comparing SOFA Score and LSTM in Predicting 48-Hour Mortality in ICU Patients with Sepsis Using MIMIC-III Data
 
 ## Definition and Significance
