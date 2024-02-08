@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>University of San Diego - Data Science Department</title>
+    <title>Medi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
     <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -36,7 +42,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="img/hdsi.png" alt="" style="width: 100px; height: auto;">
+                                    <img src="img/logo.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -64,6 +70,11 @@
                                             </ul>
                                         </nav>
                                     </div>
+                                    <div class="book_room">
+                                        <div class="book_btn">
+                                            <a class="popup-with-form" href="#test-form">Book  Appointment</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -77,215 +88,52 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="slider_text ">
-                                <h3> <span>Comparing SOFA Score and LSTM in Predicting 48-Hour in ICU Patients with Sepsis Using MIMIC-III Data</span> <br>
-                                    CAPSTONE PROJECT WINTER 2024</h3>
-                                <a href="#" class="boxed-btn5">Discover More
-                                </a>
-                            </div>
-                        </div>
+    <!-- bradcam_area_start  -->
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>About Us</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- slider_area_end -->
+    <!-- bradcam_area_end  -->
 
     <!-- welcome_clicnic_area_start -->
-    <div class="welcome_clicnic_area" style="background-image: url('img/first.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="welcome_clicnic_area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="img/about/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
                     <div class="welcome_docmed_info">
-                        <h3>
-                            <span>What is Sepsis</span></h3>
-                        <p>Sepsis is a critical and common condition in Intensive Care Units (ICU). While most sepsis cases (~80 percent) develop in the community and are present on arrival, the mortality rate for sepsis that develops while a patient is admitted, or is not present on arrival, is notably higher. One of the keys to sepsis treatment and survival lies in recognition and timely intervention/antibiotics. </p>
+                        <h3>Welcome To
+                            <span>Modern Clinic.</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni.</p>
                         <ul>
-                            <li> <i class="flaticon-verified"></i> Sepsis requires urgent attention </li>
-                            <li> <i class="flaticon-verified"></i> Its symptoms are varied and often misleading</li>
-                            <li> <i class="flaticon-verified"></i> Advanced techniques like machine learning offer new hope for early detection </li>
+                            <li> <i class="flaticon-verified"></i> Lorem ipsum dolor sit amet </li>
+                            <li> <i class="flaticon-verified"></i> Consectetur adipisicing elit, sed do</li>
+                            <li> <i class="flaticon-verified"></i> Eiusmod tempor incididunt ut labore </li>
                         </ul>
+                        <a href="about.html" class="boxed-btn6">About us</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- welcome_clicnic_area_end -->
-    <!-- depertment_area_start  -->
-    <div class="depertment_area">
-        <div class="container">
-            <div class="row custom_align align-items-end justify-content-between">
-                <div class="col-lg-6">
-                    <div class="section_title">
-                        <h3>Traditional method to detect sepsis</h3>
-                        <p>In real-life clinical settings, medical staff detect sepsis through a combination of clinical assessment, monitoring vital signs, laboratory tests, and patient history.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="depart_ment_tab mb-30">
-                        <ul class="nav" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
-                                    <i class="flaticon-cardiovascular"></i>
-                                    <h4>Clinical Assessment</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-ear"></i>
-                                    <h4>ENT Specialists</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Astrology-tab" data-toggle="tab" href="#Astrology" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-bone"></i>
-                                    <h4>Astrology</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Neuroanatomy-tab" data-toggle="tab" href="#Neuroanatomy" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-lung"></i>
-                                    <h4>Neuroanatomy</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="Blood-tab" data-toggle="tab" href="#Blood" role="tab" aria-controls="contact" aria-selected="false">
-                                    <i class="flaticon-cell"></i>
-                                    <h4>Blood Screening</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="dept_main_info white-bg">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="img/department/1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="boxed-btn">Make An Appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="img/department/1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="boxed-btn">Make An Appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <!-- single_content  -->
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="dept_thumb">
-                                <img src="img/department/1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="dept_info">
-                                <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <a href="#" class="boxed-btn">Make An Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Astrology" role="tabpanel" aria-labelledby="Astrology-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="img/department/1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="boxed-btn">Make An Appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Neuroanatomy" role="tabpanel" aria-labelledby="Neuroanatomy-tab">
-                        <!-- single_content  -->
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="dept_thumb">
-                                    <img src="img/department/1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="dept_info">
-                                    <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                    <a href="#" class="boxed-btn">Make An Appointment</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- single_content  -->
-                    </div>
-                    <div class="tab-pane fade" id="Blood" role="tabpanel" aria-labelledby="Blood-tab">
-                    <!-- single_content  -->
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="dept_thumb">
-                                <img src="img/department/1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="dept_info">
-                                <h3>Dentist with surgical mask holding <br> scaler near patient</h3 >
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <a href="#" class="boxed-btn">Make An Appointment</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single_content  -->
-                    </div>
-                  </div>
-            </div>
 
-        </div>
-    </div>
-    <!-- depertment_area_end  -->
 
     <!-- expert_doctors_area_start -->
-    <div class="expert_doctors_area">
+    <div class="expert_doctors_area p-0">
         <div class="container">
             <div class="row justify-content-center ">
                 <div class="col-lg-6">
@@ -372,56 +220,6 @@
         </div>
     </div>
     <!-- expert_doctors_area_end -->
-
-    <div class="book_apointment_area">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-7">
-                    <div class="popup_box ">
-                        <div class="popup_inner">
-                            <h3>
-                                Book an 
-                            <span>Appointment</span>
-                            </h3>
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <select class="form-select wide" id="default-select" class="">
-                                            <option data-display="Please select doctor to visit">Please select doctor to visit </option>
-                                            <option value="1">Anaf</option>
-                                            <option value="2">Nayna Therapy</option>
-                                            <option value="3">Nadif</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-xl-9">
-                                        <input type="text"  placeholder="Your name ">
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <input type="text"  placeholder="Your age">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input type="text"  placeholder="Phone number ">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input type="email"  placeholder="Email Address">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input class="datepicker" placeholder="Appointment Date">
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <input class="timepicker" placeholder="Suitable time">
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <button type="submit" class="boxed-btn3">Make an Appointment</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- quality_area_start  -->
     <div class="quality_area">
