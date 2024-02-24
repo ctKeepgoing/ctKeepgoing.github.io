@@ -2760,7 +2760,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_department.scss */
 .depertment_area {
-  background-image: url(../img/banner/department.jpg);
+  background-image: url(../img/banner/traditional.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6675,8 +6675,8 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
 }
 
 
