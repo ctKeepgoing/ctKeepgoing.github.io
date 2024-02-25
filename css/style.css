@@ -6679,5 +6679,36 @@ h6 {
   height: 150%;
 }
 
+.mentor-group-section {
+  color: #FFF; /* White text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.mentor-info h4, .group-members h4 {
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.members-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  font-size: 18px; /* Larger font size */
+}
+
+.members-list li {
+  padding: 5px 10px; /* Spacing around each member name */
+}
+
+.mentor-info p, .mentor-info a {
+  font-size: 16px; /* Slightly smaller font size than members for hierarchy */
+  color: #FFF; /* Ensuring link is also white */
+}
+
+.mentor-info a:hover {
+  text-decoration: underline; /* Adding interaction cue */
+}
 
 /*# sourceMappingURL=style.css.map */
