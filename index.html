@@ -7,6 +7,7 @@
     <title>University of San Diego - Data Science Department</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -35,7 +36,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo-img">
-                                <a href="index.html">
+                                <a href="https://datascience.ucsd.edu/">
                                     <img src="img/hdsi.png" alt="" style="width: 100px; height: auto;">
                                 </a>
                             </div>
@@ -47,19 +48,8 @@
                                         <nav>
                                             <ul id="navigation">
                                                 <li><a href="index.html">home</a></li>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">blog</a></li>
-                                                        <li><a href="single-blog.html">single-blog</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="department.html">Deportment</a></li>
-                                                        <li><a href="elements.html">elements</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="https://github.com/DZavalza2/sepsis_early_detection">Github</a></li>
+                                                <li><a href="https://github.com/DZavalza2/sepsis_early_detection">Report</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
                                         </nav>
@@ -85,10 +75,8 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="slider_text" style="color: white;">
-                                <h3><span>Early Prediction of Sepsis for ICU Patients</span> <br>
-                                    Utilizing LSTM Neural Network</h3>
-                                    <a href="#" class="boxed-btn5">Report</a>
-                                    <a href="#" class="boxed-btn5">Github</a>
+                                <h3><span>Early Prediction of Sepsis for ICU Patients
+                                    Utilizing LSTM Neural Network<span></h3>
                                 <!-- Mentor Information -->
                                 <!-- Mentor and Group Members Section -->
                                     <div class="mentor-group-section">
@@ -184,6 +172,7 @@
                     <p>The Long Short-Term Memory (LSTM) model is a type of recurrent neural network (RNN) architecture that is specifically designed to address the challenge of learning long-term dependencies in data sequences. Unlike standard RNNs, which struggle with the vanishing gradient problem, LSTMs incorporate a series of gates—namely, the input, output, and forget gates—that regulate the flow of information. These gates effectively allow the model to decide which information is important to retain or discard over long sequences, making LSTMs particularly adept at processing and predicting outcomes based on time-series data.</p>
                     <br></br>
                     <p>LSTMs are highly suitable for sepsis prediction due to their ability to recognize complex patterns in time-series data, such as the physiological signals and laboratory results collected from patients over time. Sepsis detection often requires the analysis of subtle changes in vital signs, lab test results, and other clinical parameters that may signify the onset of sepsis before it becomes clinically apparent. The LSTM's architecture enables it to capture these early warning signs by learning from sequences of data where timing and the order of events are crucial. By leveraging LSTM models, healthcare providers can potentially identify the risk of sepsis earlier than traditional methods, allowing for timely intervention and improved patient outcomes. This capability makes LSTM an invaluable tool in the advancement of predictive healthcare analytics, particularly in critical care settings where early detection of sepsis can significantly affect treatment success and survival rates.</p>
+                    <img src="img/lstm.png" alt="LSTM model">
                 </div>
             </div>
         </div>
@@ -280,55 +269,9 @@
         </div>
     </footer>
 
-    <!-- link that opens popup -->
-
-    <!-- form itself end-->
-    <form id="test-form" class="white-popup-block mfp-hide">
-        <div class="popup_box ">
-            <div class="popup_inner">
-                <h3>
-                    Book an 
-                <span>Appointment</span>
-                </h3>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <select class="form-select wide" id="default-select" class="">
-                                <option data-display="Please select doctor to visit">Please select doctor to visit </option>
-                                <option value="1">Anaf</option>
-                                <option value="2">Nayna Therapy</option>
-                                <option value="3">Nadif</option>
-                            </select>
-                        </div>
-                        <div class="col-xl-9">
-                            <input type="text"  placeholder="Your name ">
-                        </div>
-                        <div class="col-xl-3">
-                            <input type="text"  placeholder="Your age">
-                        </div>
-                        <div class="col-xl-6">
-                            <input type="text"  placeholder="Phone number ">
-                        </div>
-                        <div class="col-xl-6">
-                            <input type="email"  placeholder="Email Address">
-                        </div>
-                        <div class="col-xl-6">
-                            <input class="datepicker" placeholder="Appointment Date">
-                        </div>
-                        <div class="col-xl-6">
-                            <input class="timepicker" placeholder="Suitable time">
-                        </div>
-                        <div class="col-xl-12">
-                            <button type="submit" class="boxed-btn3">Make an Appointment</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </form>
-    <!-- form itself end -->
 
     <!-- JS here -->
+    
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
