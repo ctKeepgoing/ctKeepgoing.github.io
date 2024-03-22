@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>University of San Diego - Data Science Department</title>
+    <title>Capstone project - Early Prediction of Sepsis for ICU patients</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -49,8 +49,7 @@
                                             <ul id="navigation">
                                                 <li><a href="index.html">home</a></li>
                                                 <li><a href="https://github.com/DZavalza2/sepsis_early_detection">Github</a></li>
-                                                <li><a href="https://github.com/DZavalza2/sepsis_early_detection">Report</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="https://github.com/DZavalza2/sepsis_early_detection/blob/main/report.pdf">Report</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -81,18 +80,19 @@
                                 <!-- Mentor and Group Members Section -->
                                     <div class="mentor-group-section">
                                         <div class="mentor-info">
-                                            <h4>Mentor:</h4>
-                                            <p style="color: white;"><strong>Professor Kyle M Shannon</strong> - Data Science and Cognitive Science Department </p>  
-                                            <p> <a href="https://www.kmshannon.com/about/" target="_blank">https://www.kmshannon.com</a></p>
                                         </div>
                                         <div class="group-members">
                                             <h4>Creators:</h4>
                                             <ul class="members-list">
-                                                <li>Colin Tran</li>
-                                                <li>Jerry Zhang</li>
-                                                <li>Asif Madhin </li>
-                                                <li>Diego Zavalza</li>
+                                                <li>Colin Tran <a href="mailto:ctt005@ucsd.edu">ctt005@ucsd.edu</a></li>
+                                                <li>Jerry Zhang <a href="mailto:zhz044@ucsd.edu">zhz044@ucsd.edu</a></li>
+                                                <li>Asif Madhin <a href="mailto:amahdin@ucsd.edu">amahdin@ucsd.edu</a></li>
+                                                <li>Diego Zavalza <a href="mailto:dzavalza@ucsd.edu">dzavalza@ucsd.edu</a></li>
                                             </ul>
+                                            <br>
+                                            <br>
+                                            <h4>Mentor:</h4>
+                                            <li> Professor Kyle M Shannon <a href="https://www.kmshannon.com/about/">kmshannon.com</a></li>
                                         </div>
                                     </div>
                             </div>
@@ -119,12 +119,12 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="welcome_docmed_info" style="text-align: right;">
                         <h3><span>What is Sepsis</span></h3>
-                        <p>Sepsis is a critical and common condition in Intensive Care Units (ICU). While most sepsis cases (~80 percent) develop in the community and are present on arrival, the mortality rate for sepsis that develops while a patient is admitted, or is not present on arrival, is notably higher. One of the keys to sepsis treatment and survival lies in recognition and timely intervention/antibiotics.</p>
-                        <ul>
-                            <li> <i class="flaticon-verified"></i> Sepsis requires urgent attention </li>
-                            <li> <i class="flaticon-verified"></i> Its symptoms are varied and often misleading</li>
-                            <li> <i class="flaticon-verified"></i> Advanced techniques like machine learning offer new hope for early detection </li>
-                        </ul>
+                        <p>Sepsis is a life-threatening conditions in which the body is failing to responds to an infection,
+                            causing the body’s organs to stop working. It stands as the leading cause of
+                            mortality for in house deaths in the ICU.</p> 
+                        <br>
+                        <p>Sepsis is a very complex illness in which it typically
+                            stems from pre-existing comorbidities and underlying health conditions. While most sepsis cases (~80 percent) develop in the community and are present on arrival, the mortality rate for sepsis that develops while a patient is admitted, or is not present on arrival, is notably higher. One of the keys to sepsis treatment and survival lies in recognition and timely intervention/antibiotics.</p>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                 <div class="section_title">
                     <h1>From the Past to Modern Detection</h1>
                     <br></br>
-                    <p>Sepsis, a life-threatening response to infection leading to systemic inflammation and organ failure, has been a medical challenge for centuries. The term "sepsis" is derived from the Greek word σῆψις, meaning decay or putrefaction, indicating the disease's destructive nature. The earliest recorded observations of sepsis date back to the writings of Hippocrates (circa 460–370 BC), who described the process of wound putrefaction and the systemic illness that followed. However, the pathophysiological understanding of sepsis remained rudimentary, with many misconceptions persisting for millennia.</p>
+                    <p>Sepsis has been a medical challenge for centuries. The term "sepsis" is derived from the Greek word σῆψις, meaning decay or putrefaction, indicating the disease's destructive nature. The earliest recorded observations of sepsis date back to the writings of Hippocrates (circa 460–370 BC), who described the process of wound putrefaction and the systemic illness that followed. But for thousands of years, our basic knowledge of sepsis was limited, and many wrong ideas about it continued to exist.</p>
                     <br></br>
                 </div>
                 <p></p>
@@ -160,7 +160,7 @@
     </div>
 </div>    
         <!-- Power of Machine Learning in Medical Study -->
-        <div class="depertment_area" style="background-image: url('img/cool-background.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+        <div class="depertment_area" style="background-image: url('img/cool-background.avif'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
             <div class="container">
                 <div class="section_title">
                     <h1>Power of Machine Learning in Medical Study</h1>
@@ -171,16 +171,118 @@
                     <br></br>
                     <p>The Long Short-Term Memory (LSTM) model is a type of recurrent neural network (RNN) architecture that is specifically designed to address the challenge of learning long-term dependencies in data sequences. Unlike standard RNNs, which struggle with the vanishing gradient problem, LSTMs incorporate a series of gates—namely, the input, output, and forget gates—that regulate the flow of information. These gates effectively allow the model to decide which information is important to retain or discard over long sequences, making LSTMs particularly adept at processing and predicting outcomes based on time-series data.</p>
                     <br></br>
-                    <p>LSTMs are highly suitable for sepsis prediction due to their ability to recognize complex patterns in time-series data, such as the physiological signals and laboratory results collected from patients over time. Sepsis detection often requires the analysis of subtle changes in vital signs, lab test results, and other clinical parameters that may signify the onset of sepsis before it becomes clinically apparent. The LSTM's architecture enables it to capture these early warning signs by learning from sequences of data where timing and the order of events are crucial. By leveraging LSTM models, healthcare providers can potentially identify the risk of sepsis earlier than traditional methods, allowing for timely intervention and improved patient outcomes. This capability makes LSTM an invaluable tool in the advancement of predictive healthcare analytics, particularly in critical care settings where early detection of sepsis can significantly affect treatment success and survival rates.</p>
+                    <p>Below diagram illustrates a Long Short-Term Memory (LSTM) network, a type of recurrent neural network (RNN) used to analyze and predict sequences of data.
+
+                        The process starts with the input of hourly vital signs data, which undergoes preprocessing to become suitable for analysis. The prepared data then passes through several LSTM layers. The 'forget gate' decides which parts of the data are not important and should be discarded. The 'input gate' allows the addition of new information to the cell state, updating it with relevant data. The cell state itself carries information through the chain of LSTM cells, ensuring that the network can maintain information over time. The 'output gate' determines what the next hidden state should be. This hidden state carries information to the next LSTM cell or layer.
+                        
+                        After the data passes through multiple LSTM layers (LSTM Layer 1 to LSTM Layer N), each adding complexity and depth to the analysis, the final LSTM layer outputs data to a prediction layer. This prediction layer utilizes the processed and analyzed information to make forecasts about future vital signs at intervals of 5, 10, and 15 hours. </p>
                     <img src="img/lstm.png" alt="LSTM model">
                 </div>
             </div>
         </div>
         <!-- Result -->
-        <div class="depertment_area" style="background-image: url('img/modern.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+        <div class="depertment_area" style="background-image: url('img/result.avif'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
             <div class="container">
                 <div class="section_title">
+                    <h3>Implementation</h3>
+                    <h4><strong>Libraries use: </strong> </h4> <p>TensorFlow and Keras</p>
+                    <br>
+                    <h4><strong>Optimizer: </strong> </h4> <p>Adam </p>
+                    <br>
+                    <h4><strong>Training data: </strong> </h4> <p>MIMIC III dataset </p>
+                    <br>
+                    <h4><strong>Hyperparameter Tuning: </strong> </h4>
+                    <p>We explored several configurations of LSTM units (50, 75, 100, 125, 150) and dropout rates (0.2, 0.3, 0.4) to identify the optimal setup for our model. The final model architecture was selected based on its performance on the validation set, with a focus on maximizing
+                        recall to ensure the identification of as many true sepsis cases as possible, considering the critical nature of the condition.</p>
+                    <br>
+                    <br>
+                    <br>
                     <h3>Result</h3>
+                    <div class="graph_image">
+                        <img src="img/Confusion Matrix.png" alt="Confusion matrix" style="max-width:100%; height:auto;">
+                        <p>Confusion Matrix for predicting 5 hours ahead of time</p>
+                        <br>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="graph_image">
+                        <img src="img/ROC Curve.png" alt="ROC curve" style="max-width:60%; height:auto;">
+                        <p>The area under the curve (AUC): The closer the curve is to the top left corner (closer
+                            to 1), the higher the accuracy of the test since it means high true positive rate and
+                            low false positive rate. In our case, Area Under the Receiver Operat-
+                            ing Characteristic (AUROC) curve reached 0.89, which can be considered as a good
+                            model.</p>
+                            <br>
+                            <br>
+
+                            <table border="1" style="width: 100%; text-align: center;">
+                                <tr>
+                                  <th></th>
+                                  <th>5 Hrs</th>
+                                  <th>10 Hrs</th>
+                                  <th>15 Hrs</th>
+                                  <th>20 Hrs</th>
+                                  <th>25 Hrs</th>
+                                  <th>50 Hrs</th>
+                                </tr>
+                                <tr>
+                                  <td>Accuracy</td>
+                                  <td>80.9%</td>
+                                  <td>79.6%</td>
+                                  <td>77.9%</td>
+                                  <td>77.6%</td>
+                                  <td>77.6%</td>
+                                  <td>75.1%</td>
+                                </tr>
+                                <tr>
+                                  <td>Recall</td>
+                                  <td>81.4%</td>
+                                  <td>78.5%</td>
+                                  <td>78.1%</td>
+                                  <td>75.1%</td>
+                                  <td>74.4%</td>
+                                  <td>67.9%</td>
+                                </tr>
+                                <tr>
+                                  <td>F1 Score</td>
+                                  <td>68.4%</td>
+                                  <td>71.2%</td>
+                                  <td>71.8%</td>
+                                  <td>72.4%</td>
+                                  <td>73.0%</td>
+                                  <td>70.2%</td>
+                                </tr>
+                                <tr>
+                                  <td>Precision</td>
+                                  <td>58.9%</td>
+                                  <td>65.2%</td>
+                                  <td>66.5%</td>
+                                  <td>69.9%</td>
+                                  <td>71.7%</td>
+                                  <td>72.6%</td>
+                                </tr>
+                              </table>
+                              <br>
+                              <p style="text-align: center;">Results for predictions N hours ahead of time</p>
+                    </div>
+                    
+            </div>
+        </div>
+        <div class="depertment_area" style="background-image: url('img/cool-background.avif'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+            <div class="container">
+                <div class="section_title">
+                    <h3>Discussion</h3>
+                    <h1>Data Balancing</h1>
+                    <p>To ensure the fairness and reliability of our predictive model, a critical step undertaken was the balancing of the dataset. Given the inherent imbalance in medical datasets—where instances of sepsis are considerably rarer compared to non-sepsis cases—unadjusted, this skew could lead to a model biased towards predicting the majority class, thus undermining its clinical utility. For every training epoch, we ensured an equal distribution of sepsis and non-sepsis labels presented to the model, thereby maintaining balance in the learning process. Upon the completion of each epoch, we shuffled the predominant non-sepsis data with fresh instances. This approach guaranteed that our model was exposed to a varied set of data points, while still preserving balanced label representation throughout the training phase.
+                    </p>
+                    <br></br>
+                    <h1>Limitations</h1>
+                    <br></br>
+                    <p>When choosing our features, we decided to go with the four vital signs listed on the UCSD inpatient protocol, or SBAR (Situation, Background, Assessment, Recommendation), and blood pressure, heart rate, respiration rate, and body temperature are criteria for suspected infection. Even though these vital signs are crucial to determining sepsis, other measure- ments could be utilized to better train the model, including blood pressure (Mean Arterial Pressure), platelets, and lactate levels. We could add these measurements to our data for future improvements on the model.
+                        Another concern is that MIMIC-III dataset is from Beth Israel Deaconess Medical Center between 2001 and 2012, and the protocol we used to extract features from the dataset in from present day UC San Diego Medical Center - Hillcrest Campus. This is a potential issue when it comes to assign labels (with sepsis and without sepsis). In the future, it would be beneficial to switch to UCSD in-house electronic medical records for a match between data and protocol.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -208,66 +310,7 @@
     </div>
     <!-- Emergency_contact end -->
 
-    <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-md-6 col-lg-4 ">
-                        <div class="footer_widget">
-                            <div class="footer_logo">
-                                <a href="#">
-                                    <img src="img/logo.png" alt="">
-                                </a>
-                            </div>
-                            
-                            </p>
-                            <div class="socail_links">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                        
-                    </div>
-                    <div class="col-xl-4  col-md-6 col-lg-4">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="row">
-                    <div class="bordered_1px "></div>
-                    <div class="col-xl-12">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
 
 
     <!-- JS here -->
